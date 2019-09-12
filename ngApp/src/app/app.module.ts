@@ -8,28 +8,39 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { EventsComponent } from './events/events.component';
-import { SpecialEventsComponent } from './special-events/special-events.component';
 import { AuthService } from './auth.service';
-import { EventService } from './event.service';
 import { TokenInterceptorService } from './token-interceptor.service';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
+import { ChartsComponent } from './dashboard/charts/charts.component';
+import { NotificationsComponent } from './dashboard/notifications/notifications.component';
+import { ReportsComponent } from './dashboard/reports/reports.component';
+import { EscalatedTasksComponent } from './dashboard/escalated-tasks/escalated-tasks.component';
+import { TasksCounterComponent } from './dashboard/tasks-counter/tasks-counter.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    EventsComponent,
-    SpecialEventsComponent
+    DashboardComponent,
+    SidenavComponent,
+    ChartsComponent,
+    NotificationsComponent,
+    ReportsComponent,
+    EscalatedTasksComponent,
+    TasksCounterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule
+    
   ],
-  providers: [AuthService, AuthGuard, EventService, 
+  providers: [AuthService, AuthGuard,
   {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,

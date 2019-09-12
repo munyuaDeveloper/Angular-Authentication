@@ -2,24 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
-import { EventsComponent } from './events/events.component';
-import { SpecialEventsComponent } from './special-events/special-events.component';
 import { AuthGuard } from './auth.guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/events',
+    redirectTo: '/login',
     pathMatch: 'full'
-  },
-  {
-    path: 'events',
-    component: EventsComponent
-  },
-  {
-    path: 'special',
-    canActivate: [AuthGuard],
-    component: SpecialEventsComponent
   },
   {
     path: 'login',
@@ -28,6 +18,11 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'dashboard',
+    // canActivate: [AuthGuard],
+    component: DashboardComponent
   }
 ];
 
