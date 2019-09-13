@@ -1,0 +1,45 @@
+
+$new-tasks: rgb(43, 155, 219);
+$pending-tasks: rgb(223, 151, 35);
+$ongoing-tasks: rgb(144, 64, 168);
+$escalated-tasks: rgb(216, 92, 55);
+$completed-tasks: rgb(61, 190, 57);
+
+// .material-icons.md-18{
+//     color: $completed-tasks;
+// }
+
+.material-icons.md-18 { 
+    font-size: 18px; 
+}
+.material-icons.md-24 { 
+    font-size: 24px; 
+}
+.material-icons.md-36 {
+     font-size: 36px; 
+    }
+.material-icons.md-48 { 
+    font-size: 48px; 
+}
+.card{
+    .pelette_new{
+        border: 1px solid $new-tasks;
+        color: $new-tasks;
+    }
+    .pelette_pending{
+        border: 1px solid $pending-tasks;
+        color: $pending-tasks;
+    }
+    .pelette_ongoing{
+        border: 1px solid $ongoing-tasks;
+        color: $ongoing-tasks;
+    }
+    .pelette_escalated{
+        border: 1px solid $escalated-tasks;
+        color: $escalated-tasks;
+    }
+    .pelette_complete{
+        border: 1px solid $completed-tasks;
+        color: $completed-tasks;
+    }
+}
