@@ -1,4 +1,3 @@
-<!-- reactive form  -->
 <div class="py-5">
   <div class="row">
     <div class="col-md-6 mx-auto">
@@ -9,27 +8,18 @@
 
 
         <div class="card-body">
-          <form class="form m-5 p-1" [formGroup]="loginForm" (ngSubmit)="loginUser()">
+          <form class="form m-5 p-1">
 
             <h3 class="mb-3">Login</h3>
             <div class="form-group">
-              <label>Email or mobile phone number</label>
-              <input type="text" class="form-control rounded-0" formControlName="username" name="username"
+              <label for="uname1">Email or mobile phone number</label>
+              <input type="text" class="form-control rounded-0" [(ngModel)]="loginUserData.username" name="username"
                 placeholder="Enter email address or phone number" required>
-              <div *ngIf="f.username.invalid && (f.username.dirty || f.username.touched)" class="alert alert-danger">
-                This field is required
-              </div>
             </div>
             <div class="form-group">
               <label>Password</label>
-              <input type="password" class="form-control rounded-0" formControlName="password" name="password"
+              <input type="password" class="form-control rounded-0" [(ngModel)]="loginUserData.password" name="password"
                 placeholder="Enter at least 6 characters" required>
-              <!-- <div *ngIf="f.password.touched && f.password.errors.required" class="alert alert-danger">
-                This field is required
-              </div>
-              <div *ngIf="f.password.errors?.minlength" class="alert alert-danger">
-                You have to type atlease 6 characters
-              </div> -->
             </div>
             <div class="container-fluid m-0 p-0">
               <div class="row m-0 p-0">
@@ -45,7 +35,8 @@
                 </div>
               </div>
             </div>
-            <button id="login" type="submit" class="btn btn-success btn-block p-2 float-right">Login</button>
+            <button id="login" type="button" (click)="loginUser()"
+              class="btn btn-success btn-block p-2 float-right">Login</button>
           </form>
         </div>
         <!--/card-block-->

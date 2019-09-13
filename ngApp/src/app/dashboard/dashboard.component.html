@@ -1,17 +1,11 @@
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-5" id="main-wraper">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 mt-2 shadow p-3 mb-1 bg-black ">
-            <div class="card">
-                <div class="card-body ">
-                    <span class="card-title ml-5 pl-5">Friday 15/04/2024 2:00pm</span>
-                </div>
-            </div>
-        </div>
+
     </div>
     <div class="row mt-3">
 
         <!-- sidebar  -->
-        <div class="col-xs-12 col-sm-12 col-md-2 col-xl-2 shadow p-3 bg-black ">
+        <div class="col-xs-12 col-sm-12 col-md-2 col-xl-2" id="sidenav">
             <app-sidenav></app-sidenav>
         </div>
         <!-- sidebar end  -->
@@ -21,24 +15,48 @@
             <div class="container-fluid">
                 <!-- title  -->
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 shadow p-3 bg-black">
-                        <div class="card mt-3">
-                            <div class="card-body">
-                                <ol class="breadcrumb bg-light">
-                                    <li class="breadcrumb-item">Home<a href="#"></a></li>
-                                    <li class="breadcrumb-item active">Dashboard<a href="#"></a></li>
-                                    <!-- <li class="breadcrumb-item active"></li> -->
-                                </ol>
-                                <h3><i class="fa fa-desktop" aria-hidden="true"></i><span> Dashboard</span></h3>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 mt-2">
+                        <div class="card card-top">
+                            <div class="card-body ">
+                                <div class="container-fluid">
+                                    <div class="row p-0 m-0">
+                                        <div class="col-xs-6 col-sm-6 col-lg-6 p-0 m-0 pl-5">
+                                            <p>2:00 PM </p>
+                                            <p>
+                                                15 Sep, 2024 
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-4 col-lg-4 p-0 m-0">
+
+                                            <div class="form-group p-0 mt-0 mb-0">
+                                                <input type="text" class="form-control" name="search"
+                                                    aria-describedby="helpId" placeholder="search">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 col-sm-2 col-lg-2 p-0 m-0">
+                                            <span class="icon-right"><i class="fa fa-bell  ml-5"></i></span>
+                                            <span class="icon-right"> <i class="fa fa-cog ml-5"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+                    </div>
+                    <!-- shadow p-3 bg-black removed-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 ">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Home<a href="#"></a></li>
+                            <li class="breadcrumb-item active">Dashboard<a href="#"></a></li>
+                            <!-- <li class="breadcrumb-item active"></li> -->
+                        </ol>
                     </div>
                 </div>
 
                 <!-- cards row -->
-                <div class="row mt-5 ">
+                <div class="row">
                     <!-- card 1  -->
-                    <div class="col-xs-12 col shadow p-3 mb-1 bg-black">
+                    <div class="col-xs-12 col">
                         <div class="card">
                             <div class="card-body pelette_new">
                                 <h1 class="text-center"><i class="material-icons md-48">assignment</i> </h1>
@@ -47,7 +65,7 @@
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="col-xs-12 col shadow p-3 mb-1 bg-black">
+                    <div class="col-xs-12 col">
                         <div class="card">
                             <div class="card-body pelette_pending">
                                 <h1 class="text-center"><i class="material-icons md-48">watch_later</i> </h1>
@@ -56,7 +74,7 @@
                         </div>
                     </div>
                     <!-- card 3  -->
-                    <div class="col-xs-12 col shadow p-3 mb-1 bg-black">
+                    <div class="col-xs-12 col">
                         <div class="card">
                             <div class="card-body pelette_ongoing">
                                 <h1 class="text-center"><i class="material-icons md-48">change_history</i> </h1>
@@ -65,7 +83,7 @@
                         </div>
                     </div>
                     <!-- card 4  -->
-                    <div class="col-xs-12 col shadow p-3 mb-1 bg-black">
+                    <div class="col-xs-12 col">
                         <div class="card">
                             <div class="card-body pelette_escalated">
                                 <h1 class="text-center"><i class="material-icons md-48">assignment_late</i> </h1>
@@ -74,7 +92,7 @@
                         </div>
                     </div>
                     <!-- card 5  -->
-                    <div class="col-xs-12 col shadow p-3 mb-1 bg-black">
+                    <div class="col-xs-12 col">
                         <div class="card">
                             <div class="card-body pelette_complete">
                                 <h1 class="text-center"><i class="material-icons md-48">assignment_turned_in</i> </h1>
@@ -84,9 +102,9 @@
                     </div>
                 </div>
                 <!-- cards row end  -->
-                <div class="row mt-5">
+                <div class="row mt-2">
                     <div class="container-fluid">
-                        <div class="row mt-3">
+                        <div class="row mt2">
                             <div class="col-xs-12 col-sm-12 col-md-8 shadow p-2 mb-1 bg-black">
                                 <div class="card">
                                     <div class="card-body">

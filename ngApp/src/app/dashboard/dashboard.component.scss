@@ -42,4 +42,7 @@ $completed-tasks: rgb(61, 190, 57);
         border: 1px solid $completed-tasks;
         color: $completed-tasks;
     }
+    .breadcrumb{
+        background: transparent!important;
+    }
 }

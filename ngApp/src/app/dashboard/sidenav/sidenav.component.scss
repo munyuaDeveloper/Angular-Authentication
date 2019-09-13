@@ -1,0 +1,40 @@
+$enable-shadows: false;
+$bg-color: #E1ECEB;
+$sidebar-bg: #3D5654;
+$icon: #425C5A;
+.card{
+    background-color: $sidebar-bg;
+    color: #ffffff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    .list-group{
+        background-color: $bg-color !important;
+        border: none;
+    }
+    .list-group-item{
+        background-color:$sidebar-bg;
+        border: none;
+    }
+    li{
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+    }
+    li:hover{
+        background-color:$bg-color; 
+        color:$sidebar-bg;
+    }
+    
+}
+ .Hline{
+    border: 2px solid #E1ECEB;
+}
+
+.user{
+    display: inline-block;
+
+}
+h3 i{
+    font-size: 60px;
+}

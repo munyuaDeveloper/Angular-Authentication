@@ -1,4 +1,27 @@
 // Bootstrap and its default variables
 @import "../node_modules/bootstrap/scss/bootstrap";
 // Your variable overrides
-$enable-shadows: true;
+$enable-shadows: false;
+$bg-color: #E1ECEB;
+$sidebar-bg: #3D5654;
+$icon: #425C5A;
+
+#main-wraper{
+    background-color: $bg-color;
+    padding: 0 !important;
+    margin: 0 !important;
+    #sidenav{
+        background-color: $sidebar-bg;
+        padding: 0;
+        margin: 0;
+    }
+    .icon-right{
+        font-size: 48px;
+    }
+
+    .card-top{
+        border: none;
+        background:transparent;
+
+    }
+}
